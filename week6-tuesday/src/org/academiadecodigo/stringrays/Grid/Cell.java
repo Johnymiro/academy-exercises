@@ -16,9 +16,6 @@ public class Cell {
 
     private int cellSize = 12;
     private boolean painted;
-
-
-
     private Rectangle cell;
 
 
@@ -79,8 +76,5 @@ public class Cell {
     public boolean isPainted(){
         return painted;
     }
-
-
-
 
 }

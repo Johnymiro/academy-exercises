@@ -117,16 +117,11 @@ public class Cursor {
             }
 
             fillCell(Integer.parseInt(temp[0]), Integer.parseInt(temp[1]));
-
-
             grid.getCells()[Integer.parseInt(temp[0])]
                     [Integer.parseInt(temp[1])].setPainted(true);
-
         }
-
-
-
     }
+
 
     public void clear() {
         for (int i = 0; i < grid.getCells().length; i++) {

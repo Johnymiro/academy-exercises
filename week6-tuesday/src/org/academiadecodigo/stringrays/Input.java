@@ -38,8 +38,6 @@ public class Input implements KeyboardHandler {
                 KeyboardEvent.KEY_B,
                 KeyboardEvent.KEY_O,
                 KeyboardEvent.KEY_Q,
-
-
         };
 
         for (int key : keys) {
@@ -89,18 +87,23 @@ public class Input implements KeyboardHandler {
             case KeyboardEvent.KEY_L:
                 cursor.loadPaint();
                 break;
+
             case KeyboardEvent.KEY_R:
                 cursor.setColor(Color.RED);
                 break;
+
             case KeyboardEvent.KEY_B:
                 cursor.setColor(Color.BLUE);
                 break;
+
             case KeyboardEvent.KEY_Y:
                 cursor.setColor(Color.YELLOW);
                 break;
+
             case KeyboardEvent.KEY_O:
                 cursor.setColor(Color.ORANGE);
                 break;
+
             case KeyboardEvent.KEY_Q:
                 cursor.setColor(Color.CYAN);
                 break;
@@ -110,11 +113,7 @@ public class Input implements KeyboardHandler {
     }
 
     @Override
-    public void keyReleased(KeyboardEvent ev) {
-
-
-    }
-
+    public void keyReleased(KeyboardEvent ev) {}
 
     private void setKeybindPressed(int event) {
         KeyboardEvent newBind = new KeyboardEvent();
@@ -122,7 +121,6 @@ public class Input implements KeyboardHandler {
         newBind.setKeyboardEventType(KeyboardEventType.KEY_PRESSED);
         k.addEventListener(newBind);
     }
-
 
     private void setKeybindReleased(int event) {
         KeyboardEvent newBind = new KeyboardEvent();
