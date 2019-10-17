@@ -14,12 +14,12 @@ public class Cell {
         ORANGE
     }
 
-    private int cellSize = 12;
+    private int cellSize = 18;
     private boolean painted;
     private Rectangle cell;
 
 
-    public Cell(int x, int y){
+    public Cell(double x, double y){
 
         cell = new Rectangle(x * cellSize, y * cellSize, cellSize, cellSize);
         drawCell();

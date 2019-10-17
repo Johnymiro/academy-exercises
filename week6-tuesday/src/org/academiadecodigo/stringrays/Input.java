@@ -13,7 +13,6 @@ public class Input implements KeyboardHandler {
     private Keyboard k;
     private Cursor cursor;
     private Grid grid;
-    private Cell cell;
 
     public Input(Cursor cursor, Grid grid) {
 

@@ -25,12 +25,10 @@ public class Grid implements Serializable {
     public Grid(int cols, int rows) {
         cells = new Cell[cols][rows];
 
-
         this.cols = cols;
         this.rows = rows;
 
-        this.cursor = new Cursor(this);
-        this.input = new Input(cursor, this);
+        this.input = new Input(new Cursor(this), this);
 
         spawnCells();
     }
@@ -41,9 +39,8 @@ public class Grid implements Serializable {
             for (int j = 0; j < cells[i].length; j++) {
 
 
-                cells[i][j] = new Cell(i + 1, j + 1);
+                cells[i][j] = new Cell(i + 0.5, j + 0.5);
                 cells[i][j].drawCell();
-
             }
         }
     }

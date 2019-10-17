@@ -90,18 +90,18 @@ public class Cursor {
         grid.getCells()[col][row].setPainted(false);
     }
 
-    public void loadPaint(){
+    public void loadPaint() {
 
         String[] cellInfo = grid.loadFromMemory();
         String[] strArr;
         String[] temp;
-        for (int i = 0; i < cellInfo.length ; i++) {
+        for (int i = 0; i < cellInfo.length; i++) {
 
             strArr = cellInfo[i].split("#");
             temp = strArr[0].split("/");
 
 
-            switch (strArr[1]){
+            switch (strArr[1]) {
                 case "CYAN":
                     setColor(Color.CYAN);
                     break;
@@ -134,12 +134,14 @@ public class Cursor {
         }
     }
 
-    public void setColor(Color color){
+    public void setColor(Color color) {
         this.color = color;
     }
 
 
     public void fillCell(int x, int y) {
+
+
 
         if (!grid.getCells()[x][y].isPainted()) {
             grid.getCells()[x][y].fillCell(color);
