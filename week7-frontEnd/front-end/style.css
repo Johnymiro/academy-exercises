@@ -1,0 +1,21 @@
+hr {
+    border: 1px solid rgb(209,143,21);
+    margin: 10px;
+}
+
+.title{
+    text-align: center;
+}
+
+.contentBody{
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 30px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.profile{
+   border-radius: 30%;
+    border: 30px;
+}

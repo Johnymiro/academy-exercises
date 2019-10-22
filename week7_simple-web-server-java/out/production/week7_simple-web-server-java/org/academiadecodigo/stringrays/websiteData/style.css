@@ -1,0 +1,38 @@
+#Profile{
+   text-align: center;
+   align-content: flex-start;
+   margin-top: 3px;
+   padding: 5%;
+}
+
+#img{
+    border-radius: 8%;
+}
+
+.slide{
+    margin-left: 20%;
+    margin-right:20%;
+    margin-top: 5%;
+
+}
+
+#profileContent{
+    padding: 5%;
+}
+.alerText{
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.form{
+    width: 70px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
