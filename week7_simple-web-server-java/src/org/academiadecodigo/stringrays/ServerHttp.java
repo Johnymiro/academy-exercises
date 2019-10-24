@@ -4,58 +4,75 @@ import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ServerHttp {
+public class ServerHttp implements Runnable{
 
 
-    private static int portNumber;
-    private static String response200Html = "HTTP/1.0 200 Document Follows\r\n" +
+    private String response200Html = "HTTP/1.0 200 Document Follows\r\n" +
             "Content-Type: text/html; charset=UTF-8\r\n";
-    private static String response200CSS = "HTTP/1.0 200 Document Follows\r\n" +
+    private String response200CSS = "HTTP/1.0 200 Document Follows\r\n" +
             "Content-Type: text/css; charset=UTF-8\r\n";
 
-    private static String response200Image = "HTTP/1.0 200 Document Follows\r\n" +
+    private String response200Image = "HTTP/1.0 200 Document Follows\r\n" +
             "Content-Type: image/jpg \r\n";
-    private static String response404 = "HTTP/1.0 404 Not Found\r\n" +
+    private String response404 = "HTTP/1.0 404 Not Found\r\n" +
             "Content-Type: text/html; charset=UTF-8\r\n" +
             "Content-Length: 0 \r\n" +
             "\r\n";
 
-    private static File image = new File
-            ("/Users/codecadet/Desktop/week7_simple-web-server-java/resources/gameover3.jpg");
-    private static File htmlDir = new File
-            ("/Users/codecadet/Desktop/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/index.html");
+    private File image = new File
+            ("");
+    private File htmlDir = new File
+            ("/Users/codecadet/Desktop/academy-exercises/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/index.html");
 
-    private static File webSiteImage = new File("/Users/codecadet/Desktop/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/resource/sasuke.jpg");
-    private static File websiteCSS = new File("/Users/codecadet/Desktop/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/style.css");
-    private static File formHtml = new File("/Users/codecadet/Desktop/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/form.html");
+    private  File webSiteImage = new File("/Users/codecadet/Desktop/academy-exercises/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/resource/sasuke.jpg");
+    private  File websiteCSS = new File("/Users/codecadet/Desktop/academy-exercises/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/style.css");
+    private File formHtml = new File("/Users/codecadet/Desktop/academy-exercises/week7_simple-web-server-java/src/org/academiadecodigo/stringrays/websiteData/form.html");
+    private ServerSocket server;
 
+    private Socket client = null;
 
-
-    public ServerHttp(int portNumber){
-        this.portNumber = portNumber;
+    public ServerHttp(ServerSocket server){
+        this.server = server;
     }
 
 
-    public static void main(String[] args) {
 
-        ServerHttp server = new ServerHttp(12001);
+
+    public static void main(String[] args) throws IOException{
+
+        ServerHttp webServer = new ServerHttp(new ServerSocket(12001));
+
+        webServer.start();
+
+    }
+
+
+
+    @Override
+    public void run(){
         go();
     }
 
+    public void start(){
+
+        while(true) {
+            if (client != null) {
+                new Thread(this).start();
+            }
+            run();
+        }
+    }
 
 
-    private static void go() {
-        byte[] buffer;
+
+
+    private void go() {
+
 
         try {
 
-            // Create a connection wait to connect
-            ServerSocket server = new ServerSocket(portNumber);
+                client = server.accept();
 
-
-
-            while(true) {
-                Socket client = server.accept();
                 // Read the client input and print to console line by line in a while loop
                 BufferedReader bReader = new BufferedReader(new InputStreamReader(client.getInputStream()));
 
@@ -67,7 +84,7 @@ public class ServerHttp {
                     outputStream.write(response404.getBytes());
 
                     outputStream.close();
-                    continue;
+
                 }
 
                 System.out.println(firstLine);
@@ -81,7 +98,8 @@ public class ServerHttp {
                     outputStream.write(response404.getBytes());
 
                     outputStream.close();
-                } else if (line[1].equals("/image")) {
+                }
+                else if (line[1].equals("/image")) {
                     BufferedOutputStream outputStream = new BufferedOutputStream(client.getOutputStream());
 
 
@@ -93,8 +111,11 @@ public class ServerHttp {
 
                     outputStream.close();
 
+
+
                 } else if (line[1].equals("/index.html")) {
 
+                    System.out.println("index");
                     BufferedOutputStream outputStream = new BufferedOutputStream(client.getOutputStream());
                     String header = response200Html + "Content-Length: " + htmlDir.length() + "\r\n"
                             + "\r\n";
@@ -151,7 +172,8 @@ public class ServerHttp {
 
 
                 client.close();
-            }
+                client = null;
+
 
 
         } catch (IOException ex) {
@@ -164,7 +186,7 @@ public class ServerHttp {
 
 
 
-    private static byte[] converter(File file) {
+    private byte[] converter(File file) {
         byte[] fileBytes = new byte[(int) file.length()];
 
         try {

@@ -11,15 +11,48 @@
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="http://localhost:12001/index.html"><span class="badge badge-dark">Johny Miro</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Achivements</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+            Welcome to my Profile
+          </span>
+    </div>
+</nav>
+
 <div class="form">
-    <form class="pa4 black-80">
-        <div class="measure">
-            <label for="name" class="f6 b db mb2">Name <span class="normal black-60">(optional)</span></label>
-            <input id="name" class="input-reset ba b--black-20 pa2 mb2 db w-100" type="text"
-                   aria-describedby="name-desc">
-            <small id="name-desc" class="f6 black-60 db mb2">Please enter your full name</small>
-            <button type="submit" class="btn btn-primary">Submit</button>
+    <form>
+        <div class="form-group">
+            <label for="inlineFormInputName2">Name</label>
+            <input type="name" class="form-control" id="inlineFormInputName2" placeholder="Full Name">
         </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlInput2">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
     </form>
 </div>
 
