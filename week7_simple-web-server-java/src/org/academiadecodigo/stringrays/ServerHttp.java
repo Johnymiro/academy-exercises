@@ -42,18 +42,34 @@ public class ServerHttp implements Runnable{
 
         ServerHttp webServer = new ServerHttp(new ServerSocket(12001));
 
-        webServer.start();
+        webServer.serverLaunch(webServer);
+
+
 
     }
 
 
+    public void serverLaunch(ServerHttp webServer){
+        while(true) {
+            if (webServer.getClient() != null) {
+
+                Thread t = new Thread(webServer);
+                t.start();
+            } else webServer.run();
+        }
+    }
 
     @Override
     public void run(){
-        go();
+
+
+            go(client);
+            return;
+
+
     }
 
-    public void start(){
+   /* public void start(){
 
         while(true) {
             if (client != null) {
@@ -62,16 +78,18 @@ public class ServerHttp implements Runnable{
             run();
         }
     }
+    */
 
 
 
 
-    private void go() {
+    private void go(Socket client) {
 
 
         try {
 
                 client = server.accept();
+                System.out.println("This is thread: " + Thread.currentThread().getName());
 
                 // Read the client input and print to console line by line in a while loop
                 BufferedReader bReader = new BufferedReader(new InputStreamReader(client.getInputStream()));
@@ -171,6 +189,8 @@ public class ServerHttp implements Runnable{
                 }
 
 
+                Thread.sleep(1000);
+
                 client.close();
                 client = null;
 
@@ -178,6 +198,9 @@ public class ServerHttp implements Runnable{
 
         } catch (IOException ex) {
             System.out.println("ServerHttp.go() --> " + ex.getMessage());
+        } catch (InterruptedException e){
+            System.out.println("sleep thread in go");
+            e.printStackTrace();
         }
     }
 
@@ -198,6 +221,11 @@ public class ServerHttp implements Runnable{
         }
 
         return fileBytes;
+    }
+
+
+    public Socket getClient(){
+        return client;
     }
 
 }
