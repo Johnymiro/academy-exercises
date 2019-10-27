@@ -15,17 +15,14 @@ public class Server extends Thread{
         this.serverPort = serverPort;
     }
 
-    public List<ServerWorker> getClientList(){
-        return clientList;
-    }
-
     @Override
     public void run() {
         try {
             ServerSocket serverSocket = new ServerSocket(serverPort);
 
             while(true){
-                System.out.println("about to accept client connection");
+
+                System.out.println("Waiting to accept client connection");
                 Socket clientSocket = serverSocket.accept();
                 System.out.println("Accepted connection from " + clientSocket);
                 ServerWorker worker = new ServerWorker(this, clientSocket);
@@ -37,4 +34,11 @@ public class Server extends Thread{
         }
     }
 
+    public void removeWorker(ServerWorker serverWorker) {
+        clientList.remove(serverWorker);
+    }
+
+    public List<ServerWorker> getClientList(){
+        return clientList;
+    }
 }

@@ -1,0 +1,25 @@
+User & Server
+
+1. User --> logoff
+
+   *login / logoff
+   *status
+
+2. Server --> User
+
+   *Online / offline
+
+3. User --> User
+
+   *direct message
+   *broadcast messages
+
+
+Commands:
+
+    /login /logoff
+    /quit
+
+    msg <user> text...
+    example: /whisper -Jim Hello dude how are you?
+    jim: [user] "Hello dude how are you"
