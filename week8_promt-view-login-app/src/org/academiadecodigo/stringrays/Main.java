@@ -9,9 +9,9 @@ public class Main {
         users.addUser(new User("Johny", "123456"));
         users.addUser(new User("Kira", "deathnote"));
 
-
         PromptScanner prompt = new PromptScanner(users);
-        prompt.start();
+        prompt.go();
+
 
     }
 }

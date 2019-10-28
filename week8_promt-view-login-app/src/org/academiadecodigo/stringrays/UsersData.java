@@ -3,35 +3,25 @@ package org.academiadecodigo.stringrays;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
-import java.util.List;
+
 
 public class UsersData {
 
 
     private ArrayList<User> users = new ArrayList<>();
 
-    public UsersData(User user) {
-
-        users.add(user);
-    }
-
-    public UsersData() {
-    }
-
 
     public void addUser(User user) {
         users.add(user);
     }
 
-    public ArrayList<User> getUsers() {
-        return users;
-    }
 
-    public boolean handleLogin(String username, String password){
+    public boolean handleLogin(String username, String password) {
 
         for (User user : users) {
             if (user.getName().equals(username) &&
-                 passwordHash(password).equals(user.getPassword())){
+                    hashGenerator(password).equals(user.getPassword())) {
+
                 return true;
             }
         }
@@ -40,17 +30,22 @@ public class UsersData {
     }
 
 
-
-    public static byte[] passwordHash(String password){
+    public static String hashGenerator(String password) {
 
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
             md.update(password.getBytes());
             byte[] digest = md.digest();
 
-            return digest;
+            StringBuffer hexString = new StringBuffer();
 
-        }catch (NoSuchAlgorithmException e){
+            for (int i = 0; i < digest.length; i++) {
+                hexString.append(Integer.toHexString(0xFF & digest[i]));
+            }
+
+            return hexString.toString();
+
+        } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
         return null;
