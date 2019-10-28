@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3539d52-f697-48f6-9675-519d8e196394" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../char-server-with-multithread/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../char-server-with-multithread/src/org/academiadecodigo/stringrays/ContentQueu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../char-server-with-multithread/src/org/academiadecodigo/stringrays/TCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../week7-producer-consumer-skeleton/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week7_simple-web-server-java/org/academiadecodigo/stringrays/ServerHttp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week7_simple-web-server-java/org/academiadecodigo/stringrays/ServerHttp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/week7_simple-web-server-java/org/academiadecodigo/stringrays/websiteData/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/week7_simple-web-server-java/org/academiadecodigo/stringrays/websiteData/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java" afterDir="false" />
-    </list>
+    <list default="true" id="b3539d52-f697-48f6-9675-519d8e196394" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +13,7 @@
     <session id="-972484178">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
@@ -65,7 +56,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
+            <state relative-caret-position="276">
               <caret line="202" column="32" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="32" />
             </state>
           </provider>
@@ -130,7 +121,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="28" />
     <option name="y" value="23" />
     <option name="width" value="1796" />
@@ -245,7 +236,8 @@
     <option name="totallyTimeSpent" value="12740000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="23" width="1796" height="1010" extended-state="1" />
+    <frame x="28" y="23" width="1796" height="1010" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1368301" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -293,7 +285,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
+        <state relative-caret-position="276">
           <caret line="202" column="32" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="32" />
         </state>
       </provider>
