@@ -9,7 +9,7 @@ import org.academiadecodigo.stringrays.Grid.Grid;
 public class Main {
     public static void main(String[] args) throws InterruptedException{
 
-      Grid g = new Grid(33, 30);
+      Grid g = new Grid(5, 5);
 
 
 

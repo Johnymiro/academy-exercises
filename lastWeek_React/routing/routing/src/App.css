@@ -1,0 +1,28 @@
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 500px 150px;
+  grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer"
+  ;
+  grid-gap: 15px 10px;
+
+  text-align: center;
+  border: 2px solid gray;
+  padding-top: 10px;
+}
+
+

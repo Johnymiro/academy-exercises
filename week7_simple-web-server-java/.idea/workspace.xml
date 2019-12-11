@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3539d52-f697-48f6-9675-519d8e196394" name="Default Changelist" comment="" />
+    <list default="true" id="b3539d52-f697-48f6-9675-519d8e196394" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../chat-server-with_multiThread/src/org/academiadecodigo/stringrays/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-server-with_multiThread/src/org/academiadecodigo/stringrays/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/out/production/matrix-painter/org/academiadecodigo/stringrays/Cursor.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/out/production/matrix-painter/org/academiadecodigo/stringrays/Cursor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/out/production/matrix-painter/org/academiadecodigo/stringrays/Grid/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/out/production/matrix-painter/org/academiadecodigo/stringrays/Grid/Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/out/production/matrix-painter/org/academiadecodigo/stringrays/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/out/production/matrix-painter/org/academiadecodigo/stringrays/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/resources/save0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/resources/save0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/src/org/academiadecodigo/stringrays/Grid/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/src/org/academiadecodigo/stringrays/Grid/Cell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week6-tuesday/src/org/academiadecodigo/stringrays/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week6-tuesday/src/org/academiadecodigo/stringrays/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8_promt-view-login-app/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week8_promt-view-login-app/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8_promt-view-login-app/out/production/week8_promt-view-login-app/org/academiadecodigo/stringrays/PromptScanner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week8_promt-view-login-app/out/production/week8_promt-view-login-app/org/academiadecodigo/stringrays/PromptScanner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8_promt-view-login-app/out/production/week8_promt-view-login-app/org/academiadecodigo/stringrays/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week8_promt-view-login-app/out/production/week8_promt-view-login-app/org/academiadecodigo/stringrays/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8_promt-view-login-app/out/production/week8_promt-view-login-app/org/academiadecodigo/stringrays/UsersData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../week8_promt-view-login-app/out/production/week8_promt-view-login-app/org/academiadecodigo/stringrays/UsersData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8_promt-view-login-app/src/org/academiadecodigo/stringrays/PromptScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week8_promt-view-login-app/src/org/academiadecodigo/stringrays/PromptScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../week8_promt-view-login-app/src/org/academiadecodigo/stringrays/UsersData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../week8_promt-view-login-app/src/org/academiadecodigo/stringrays/UsersData.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,26 +28,26 @@
     <session id="-972484178">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="2" />
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="1" />
-          <entry key="java" value="7" />
+          <entry key="java" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="JAVA" value="7" />
+          <entry key="JAVA" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -56,8 +71,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="202" column="32" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="32" />
+            <state relative-caret-position="43">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
             </state>
           </provider>
         </entry>
@@ -89,6 +104,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/Response.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -133,9 +157,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,6 +196,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,17 +253,18 @@
       <workItem from="1571925718951" duration="5090000" />
       <workItem from="1571991426172" duration="1430000" />
       <workItem from="1572106013492" duration="598000" />
+      <workItem from="1573386096128" duration="406000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12740000" />
+    <option name="totallyTimeSpent" value="13146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="28" y="23" width="1796" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1368301" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13797036" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -276,20 +301,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="202" column="32" selection-start-line="202" selection-start-column="32" selection-end-line="202" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/websiteData/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -312,6 +323,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/academiadecodigo/stringrays/ServerHttp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
         </state>
       </provider>
     </entry>

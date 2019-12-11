@@ -28,7 +28,7 @@ public class PromptScanner {
 
     private void handleRegister(){
 
-        System.out.println("\n   *** Register ***\n");
+        System.out.println("\n  *** Register ***\n");
 
         StringInputScanner question1 = new StringInputScanner();
         question1.setMessage("New username: ");

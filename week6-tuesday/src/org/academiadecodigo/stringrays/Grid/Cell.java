@@ -14,7 +14,7 @@ public class Cell {
         ORANGE
     }
 
-    private int cellSize = 18;
+    private int cellSize = 150;
     private boolean painted;
     private Rectangle cell;
 
